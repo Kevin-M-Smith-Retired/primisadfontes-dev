@@ -3,9 +3,9 @@ layout: post
 title: "A Proposal"
 description: 
 headline: 
-modified: 2014-07-23
-category: About This Site
-tags: [jekyll]
+modified: 2014-11-13
+category: Intentions
+tags: 
 imagefeature: 
 mathjax: 
 chart: 
