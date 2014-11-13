@@ -6,6 +6,9 @@ headline:
 tags: 
 ---
 {% if site.paginate %}
+{% for tag in tags_list %} 
+    	<li><a href="#{{ tag[0] }}">{{ tag[0] | capitalize }} <span>{{ tag[1].size }}</span></a></li>
+    {% endfor %}
     <article class="notepad-index-post post row fadeInDown" style="height: 0px; padding-top: 0px; padding-bottom: 0px;"></article>
 	{% for post in paginator.posts %}
     <article class="notepad-index-post post row">
