@@ -438,7 +438,7 @@ nav.pagination {
     text-align: center; }
     .notepad-tags-container .notepad-tags-header .tag-name {
       color: #e51843;
-      text-transform: none; }
+      text-transform: uppercase; }
     @media only screen and (min-width: 40.063em) {
       .notepad-tags-container .notepad-tags-header {
         font-size: 1.5625rem; } }
