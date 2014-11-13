@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "Why Jekyll?"
-description: 
+title: "A Proposal"
+description: nota bene: an online lab notebook exploring reproducible research, literate programming, data analysis, and informatics. 
 headline: 
-modified: 2014-07-23
-category: webdevelopment
+modified: 2014-11-13
+category: 
 tags: [jekyll]
 imagefeature: 
 mathjax: 
