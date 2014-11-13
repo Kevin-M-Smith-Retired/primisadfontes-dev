@@ -35,12 +35,8 @@ links:
     url: /
     external: false
     icon: home
-  - title: Notate Bene
-    url: /notatebene
-  - title: Featured Posts
-    url: /featured
-  - title: Categories
-    url: /categories
+  - title: Collections
+    url: /collections
   - title: About
     url: /about
 
