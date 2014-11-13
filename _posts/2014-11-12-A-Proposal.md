@@ -1,10 +1,10 @@
 ---
 layout: post
 title: "A Proposal"
-description: nota bene: an online lab notebook exploring reproducible research, literate programming, data analysis, and informatics. 
+description: 
 headline: 
-modified: 2014-11-13
-category: 
+modified: 2014-07-23
+category: mission
 tags: [jekyll]
 imagefeature: 
 mathjax: 
