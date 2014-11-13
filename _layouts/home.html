@@ -31,21 +31,16 @@
     </div>
     <div class="notepad-site-head-content">
         <div class="notepad-site-head-bg"></div>
-        <h1 class="notepad-blog-title">
-            <span class="notepad-site-head-title-bg">
-                
-            </span>
-        </h1>
         <h2 class="notepad-blog-description">{{ site.description }}</h2>
-         <ul class="tag-box" style="text-align:center;">
+         <ul class="tag-box" style="text-align:center; border: white;">
 {% assign tags_list = site.tags %}  
   {% if tags_list.first[0] == null %}
     {% for tag in tags_list %} 
-    	<li style="display:inline-block;><a style="color: #FFFFFF;" href="tags/index.html#{{ tag }}">{{ tag | capitalize }} <span>{{ site.tags[tag].size }}</span></a></li>
+    	<li style="display:inline-block;><a style="color: #FFFFFF;" href="tags/index.html#{{ tag }}">{{ tag | capitalize }} <span style="color: white;">{{ site.tags[tag].size }}</span></a></li>
     {% endfor %}
   {% else %}
     {% for tag in tags_list %} 
-    	<li style="display:inline-block;"><a style="color: #FFFFFF;" href="tags/index.html#{{ tag[0] }}">{{ tag[0] | capitalize }} <span>{{ tag[1].size }}</span></a></li>
+    	<li style="display:inline-block;"><a style="color: #FFFFFF;" href="tags/index.html#{{ tag[0] }}">{{ tag[0] | capitalize }} <span style="color: white;">{{ tag[1].size }}</span></a></li>
     {% endfor %}
   {% endif %}
 {% assign tags_list = nil %}
