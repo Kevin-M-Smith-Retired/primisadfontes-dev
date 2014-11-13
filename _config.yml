@@ -16,8 +16,9 @@ owner:
   email:          kevin.smith@tufts.edu
   website:        ethosengineering.org
   # Use the coder's toolbox at http://coderstoolbox.net/string/#!encoding=xml&action=encode&charset=us_ascii to encode your description into XML string
-  description:    PhD. Student in Environmental and Water Resources, Tufts University
+  description:    PhD. Student in Environmental and Water Resources
   description2:   NSF IGERT Fellow in Water and Diplomacy
+  description3:   Tufts University
   # Social networking links used in footer. Update and remove as you like.
   twitter:        freiwasser
   github:         Kevin-M-Smith
