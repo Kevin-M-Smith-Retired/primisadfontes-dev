@@ -419,7 +419,7 @@ nav.pagination {
     -ms-transform: translateY(0);
     transform: translateY(0); } }
 .tag-template .notepad-index-post:first-of-type {
-  padding-top: 3.125rem; }
+  padding-top: 1.125rem; }
   @media only screen and (min-width: 40.063em) {
     .tag-template .notepad-index-post:first-of-type {
       padding-top: 4.6875rem; } }
