@@ -37,10 +37,7 @@
             </span>
         </h1>
         <h2 class="notepad-blog-description">{{ site.description }}</h2>
-    </div>
-</header>
-
-<ul class="tag-box" style="text-align:center;">
+        <ul class="tag-box" style="text-align:center;">
 {% assign tags_list = site.tags %}  
   {% if tags_list.first[0] == null %}
     {% for tag in tags_list %} 
@@ -53,6 +50,9 @@
   {% endif %}
 {% assign tags_list = nil %}
 </ul>
+    </div>
+</header>
+
 
 <main class="notepad-content" role="main">
 
