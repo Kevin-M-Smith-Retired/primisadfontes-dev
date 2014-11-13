@@ -4,7 +4,7 @@ title: "A Proposal"
 description: 
 headline: 
 modified: 2014-11-13
-category: [Intentions, grapes]
+category: [Intentions]
 tags: [history, lettuce, deeds]
 imagefeature: 
 mathjax: 
