@@ -1,5 +1,5 @@
 title:            Notepad
-description:      "Blogging is fun"
+description:      "primis ad fontes"
 logo:             logo.png
 disqus_shortname: hmfaysal
 share:            true
@@ -11,9 +11,9 @@ url:        	  http://kevin-m-smith.github.io/primisadfontes-dev/
 
 # Owner/author information
 owner:
-  name:           Hossain Mohd Faysal
-  avatar:         hmfaysal.jpg
-  email:          hmfaysal@alum.mit.edu
+  name:           Kevin M. Smith
+  avatar:         KMS.jpg
+  email:          kevin.smith@tufts.edu
   # Use the coder's toolbox at http://coderstoolbox.net/string/#!encoding=xml&action=encode&charset=us_ascii to encode your description into XML string
   description:    Awesome Dude, Awesome Life
   # Social networking links used in footer. Update and remove as you like.
@@ -25,7 +25,7 @@ owner:
   google_plus:    https://plus.google.com/u/0/102602916593522619858
 
 # Analytics and webmaster tools stuff goes here
-google_analytics:   UA-39365944-7
+google_analytics:   
 google_verify:      
 # https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
 bing_verify:         
