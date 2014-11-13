@@ -1,6 +1,9 @@
 <footer class="notepad-site-footer">
     <div class="copyright">
          <section>All content copyright <a href="{{ site.url }}/about">{{ site.owner.name }}</a> &copy; {{ site.time | date: '%Y' }} &bull; All rights reserved.</section>
+         
+         <br>
+         
          <section>Proudly published with <a class="icon-ghost" href="https://jekyllrb.com/">Jekyll</a></section>
     </div>
     <div class="social-icons">
@@ -45,6 +48,16 @@
             </span>
         </a>
         {% endif %}
+        {% if site.owner.linkedin %}
+                    <li>
+                        <a href="https://www.linkedin.com/in/{{ site.owner.linkedin }}">
+                             <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    {% endif %}
     </div>
     
     <div class="cf"></div>
