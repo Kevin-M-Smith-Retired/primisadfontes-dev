@@ -31,11 +31,11 @@
     </div>
     <div class="notepad-site-head-content">
         <div class="notepad-site-head-bg"></div>
-        <ul class="tag-box" style="text-align:center;">
+        <h1 class="notepad-blog-title"><ul class="tag-box" style="text-align:center;">
 {% assign tags_list = site.tags %}  
   {% if tags_list.first[0] == null %}
     {% for tag in tags_list %} 
-    	<h1 class="notepad-blog-title"> <li style="display:inline-block;><a style="color: #D90035;" href="tags/index.html#{{ tag }}">{{ tag | capitalize }} <span>{{ site.tags[tag].size }}</span></a></li> </h1>
+    	 <li style="display:inline-block;><a style="color: #D90035;" href="tags/index.html#{{ tag }}">{{ tag | capitalize }} <span>{{ site.tags[tag].size }}</span></a></li> 
     {% endfor %}
   {% else %}
     {% for tag in tags_list %} 
@@ -43,7 +43,7 @@
     {% endfor %}
   {% endif %}
 {% assign tags_list = nil %}
-</ul>
+</ul></h1>
         
         
         
