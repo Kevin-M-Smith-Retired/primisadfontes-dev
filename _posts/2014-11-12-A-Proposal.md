@@ -5,7 +5,7 @@ description:
 headline: 
 modified: 2014-11-13
 category: [Intentions]
-tags: [history, lettuce, deeds]
+tags: [history, lettuce, deeds, one, two, three, four, five, six, R, ggplot2, ohmy, six, ARIMA]
 imagefeature: 
 mathjax: 
 chart: 
