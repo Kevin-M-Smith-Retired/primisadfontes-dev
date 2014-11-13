@@ -1,7 +1,7 @@
 title:            notate bene
 description:      "An Open Source Lab Notebook"
 logo:             logo.png
-disqus_shortname: hmfaysal
+disqus_shortname: 
 share:            true
 dropcap:			true
 # Change url to your domain. Leave localhost server or blank when working locally.
