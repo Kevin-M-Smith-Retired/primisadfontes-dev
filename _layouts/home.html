@@ -39,13 +39,13 @@
     {% for tag in tags_list %} 
     	<li style="display:inline-block;><a style="color: #FFFFFF; border-color: white;
 border-style: solid;
-border-width: 0.0625rem;" href="tags/index.html#{{ tag }}">{{ tag | capitalize }} <span style="color: white;">{{ site.tags[tag].size }}</span></a></li>
+border-width: 0.0625rem;" href="tags/index.html#{{ tag }}">{{ tag }} <span style="color: white;">{{ site.tags[tag].size }}</span></a></li>
     {% endfor %}
   {% else %}
     {% for tag in tags_list %} 
     	<li style="display:inline-block;"><a style="color: #FFFFFF; border-color: white;
 border-style: solid;
-border-width: 0.0625rem;" href="tags/index.html#{{ tag[0] }}">{{ tag[0] | capitalize }} <span style="color: white;">{{ tag[1].size }}</span></a></li>
+border-width: 0.0625rem;" href="tags/index.html#{{ tag[0] }}">{{ tag[0] }} <span style="color: white;">{{ tag[1].size }}</span></a></li>
     {% endfor %}
   {% endif %}
 {% assign tags_list = nil %}
