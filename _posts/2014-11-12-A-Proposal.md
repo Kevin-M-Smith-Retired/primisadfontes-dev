@@ -4,7 +4,7 @@ title: "A Proposal"
 description: 
 headline: 
 modified: 2014-07-23
-category: 
+category: About This Site
 tags: [jekyll]
 imagefeature: 
 mathjax: 
