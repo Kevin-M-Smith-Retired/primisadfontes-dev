@@ -198,20 +198,20 @@ main, .notepad-share-icons, .notepad-disqus {
       font-size: 1rem; }
     .notepad-site-head .notepad-site-head-content h2 {
       font-size: 1.2rem;
-      padding-bottom: 2.34375rem;
+      padding-bottom: 0.5rem;
       font-weight: 700; } }
   @media only screen and (min-width: 90em) {
     .notepad-site-head .notepad-site-head-content h1 {
       padding-top: 2.578125rem; }
     .notepad-site-head .notepad-site-head-content h2 {
       font-size: 1.2rem;
-      padding-bottom: 2.578125rem; } }
+      padding-bottom: 0.5rem; } }
   @media only screen and (min-width: 100em) {
     .notepad-site-head .notepad-site-head-content h1 {
       padding-top: 0rem; }
     .notepad-site-head .notepad-site-head-content h2 {
       font-size: 2.5rem;
-      padding-bottom: 0rem; } }
+      padding-bottom: 0.5rem; } }
 
 .notepad-content .notepad-index-post {
   visibility: hidden;
