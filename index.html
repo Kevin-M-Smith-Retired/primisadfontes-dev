@@ -5,8 +5,20 @@ description:
 headline: 
 tags: 
 ---
+<ul class="tag-box inline">
+{% assign tags_list = site.tags %}  
+  {% if tags_list.first[0] == null %}
+    {% for tag in tags_list %} 
+    	<li><a href="#{{ tag }}">{{ tag | capitalize }} <span>{{ site.tags[tag].size }}</span></a></li>
+    {% endfor %}
+  {% else %}
+    {% for tag in tags_list %} 
+    	<li><a href="#{{ tag[0] }}">{{ tag[0] | capitalize }} <span>{{ tag[1].size }}</span></a></li>
+    {% endfor %}
+  {% endif %}
+{% assign tags_list = nil %}
+</ul>
 {% if site.paginate %}
-{% for tag in tags_list %} 
     	<li><a href="#{{ tag[0] }}">{{ tag[0] | capitalize }} <span>{{ tag[1].size }}</span></a></li>
     {% endfor %}
     <article class="notepad-index-post post row fadeInDown" style="height: 0px; padding-top: 0px; padding-bottom: 0px;"></article>
