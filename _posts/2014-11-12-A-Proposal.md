@@ -4,7 +4,7 @@ title: "A Proposal"
 description: 
 headline: 
 modified: 2014-07-23
-category: mission
+category: 
 tags: [jekyll]
 imagefeature: 
 mathjax: 
