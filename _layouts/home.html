@@ -26,13 +26,23 @@
 {% endfor %}            
            <li><a href="{{ site.url }}/feed.xml" title="Atom/RSS feed"><i class="icon-rss"></i> Feed</a></li>
     </ul>
-</div>
-    </div>
-</header>
-<hr style="
+    <hr style="
     margin-top: 0px;
     margin-bottom: 0px;
 ">
+</div>
+<div class="clearfix"></div>
+    </div>
+    <div class="notepad-site-head-content" style="height: 100px !important;">
+        <div class="notepad-site-head-bg"></div>
+        <h1 class="notepad-blog-title">
+            <span class="notepad-site-head-title-bg">
+                {{ site.title }}
+            </span>
+        </h1>
+        <h2 class="notepad-blog-description">{{ site.description }}</h2>
+    </div>
+</header>
 
 
 <main class="notepad-content" role="main">
