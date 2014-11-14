@@ -25,7 +25,7 @@ description: "An archive of posts sorted by date."
 	  {% endif %}
 
     {% endunless %}
-
+    &nbsp;&nbsp; &nbsp;&nbsp; 
     {% assign d = post.date | date: "%-d" %}
 {% case d %}
   {% when '1' or '21' or '31' %}{{ d }}st
@@ -33,5 +33,5 @@ description: "An archive of posts sorted by date."
   {% when '3' or '23' %}{{ d }}rd
   {% else %} {{ d }}th
   {% endcase %}
-    &nbsp;&nbsp; &nbsp;&nbsp; // <a href="{{ post.url }}"> {{ post.title }}</a><br>
+  // <a href="{{ post.url }}"> {{ post.title }}</a><br>
   {% endfor %}
