@@ -4,12 +4,13 @@ title: Archive
 permalink: /archive/index.html
 description: "An archive of posts sorted by date."
 ---
-<ul>
+
   {% for post in site.posts %}
 
     {% unless post.next %}
       <h3>{{ post.date | date: '%Y' }}</h3>
       <h4>{{ post.date | date: '%B' }}</h4>
+      <ul>
     {% else %}
       {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
       {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
@@ -17,11 +18,15 @@ description: "An archive of posts sorted by date."
       {% capture nmonth %}{{ post.next.date | date: '%B' }}{% endcapture %}
       {% if year != nyear %}
         <h3>{{ post.date | date: '%Y' }}</h3>
+        </ul>
         <h4>&nbsp;{{ post.date | date: '%B' }}</h4>
+        <ul>
      
       {% else %}
       {% if month != nmonth %}
+         </ul>
       	<h4>&nbsp;{{ post.date | date: '%B' }}</h4>
+      	<ul>
        {% endif %}
 	  {% endif %}
 
