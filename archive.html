@@ -17,16 +17,16 @@ description: "An archive of posts sorted by date."
       {% capture nmonth %}{{ post.next.date | date: '%B' }}{% endcapture %}
       {% if year != nyear %}
         <h3>{{ post.date | date: '%Y' }}</h3>
-        <h4>{{ post.date | date: '%B' }}</h4>
+        &nbsp;&nbsp;&nbsp;&nbsp;<h4>{{ post.date | date: '%B' }}</h4>
      
       {% else %}
       {% if month != nmonth %}
-      	<h4>{{ post.date | date: '%B' }}</h4>
+      	&nbsp;&nbsp;&nbsp;&nbsp;<h4>{{ post.date | date: '%B' }}</h4>
        {% endif %}
 	  {% endif %}
 
     {% endunless %}
 
-    <li>{{ post.date | date:"%d" }} <a href="{{ post.url }}">{{ post.title }}</a></li>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<li>{{ post.date | date:"%d" }} <a href="{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
 </ul>
