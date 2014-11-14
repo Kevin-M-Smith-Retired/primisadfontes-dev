@@ -10,7 +10,6 @@ description: "An archive of posts sorted by date."
     {% unless post.next %}
       <h3>{{ post.date | date: '%Y' }}</h3>
       <h4>{{ post.date | date: '%B' }}</h4>
-      <ul>
     {% else %}
       {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
       {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
@@ -18,7 +17,6 @@ description: "An archive of posts sorted by date."
       {% capture nmonth %}{{ post.next.date | date: '%B' }}{% endcapture %}
       {% if year != nyear %}
         <h3>{{ post.date | date: '%Y' }}</h3>
-        </ul>
         <h4>&nbsp;{{ post.date | date: '%B' }}</h4>
      
       {% else %}
@@ -31,12 +29,12 @@ description: "An archive of posts sorted by date."
 
     {% endunless %}
 
-    &nbsp;&nbsp; {% assign d = page.date | date: "%-d" %}
+    &nbsp;&nbsp; {% assign d = post.date | date: "%-d" %}
 {% case d %}
   {% when '1' or '21' or '31' %}{{ d }}st
   {% when '2' or '22' %}{{ d }}nd
   {% when '3' or '23' %}{{ d }}rd
   {% else %}{{ d }}th
   {% endcase %}
-   <a href="{{ post.url }}"> // {{ post.title }}</a></li>
+   <a href="{{ post.url }}"> // {{ post.title }}</a>
   {% endfor %}
