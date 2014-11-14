@@ -18,9 +18,11 @@ description: "An archive of posts sorted by date."
       {% if year != nyear %}
         <h3>{{ post.date | date: '%Y' }}</h3>
         <h4>{{ post.date | date: '%B' }}</h4>
-      {% elseif month != nmonth %}
+     
+      {% else %}
+      {% if month != nmonth %}
       	<h4>{{ post.date | date: '%B' }}</h4>
-    
+       {% endif %}
 	  {% endif %}
 
     {% endunless %}
