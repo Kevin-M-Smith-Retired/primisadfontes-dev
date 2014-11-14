@@ -9,8 +9,16 @@ description: "An archive of posts sorted by date."
 
     {% unless post.next %}
       <h3>{{ post.date | date: '%Y' }}</h3>
+      <h4>{{ post.date | date: '%M' }}</h4>
     {% else %}
       {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
+      
+      {% capture month %}{{ post.date | date: '%M' }}{% endcapture %}
+      {% capture nmonth %}{{ post.next.date | date: '%M' }}{% endcapture %}
+
+      {% if month != nmonth %}
+                  <h4>{{ post.date | date: '%M' }}</h4>
+	  {% endif % }
       {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
       {% if year != nyear %}
         <h3>{{ post.date | date: '%Y' }}</h3>
