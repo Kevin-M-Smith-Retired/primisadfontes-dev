@@ -40,6 +40,8 @@ links:
     icon: home
   - title: Collections
     url: /collections
+  - title: Archive
+    url: /archive
   - title: About
     url: /about
 
